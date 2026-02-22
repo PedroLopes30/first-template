@@ -7,46 +7,98 @@
     <title>Users</title>
 </head>
 <body>
-    <section>
-        <header>
-            <h1>Gerenciamento de Usuários</h1>
-            <button type="button">Novo Usuário</button>
-        </header>
+    <div class="container mx-auto py-8 px-4">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold text-gray800">Gerenciamento de Usuários</h2>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300" type="button">Novo Usuário</button>
+        </div>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>E-mail</th>
-                    <th>Cargo</th>
-                    <th>Status</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Ana Silva</td>
-                    <td>ana.silva@email.com</td>
-                    <td>Editor</td>
-                    <td>Ativo</td>
-                    <td>
-                        <a href="#">Editar</a>
-                        <a href="#">Excluir</a>
-                    </td>
-                </tr>
+        <div class="overflow-x-auto bg-white rounded-xl shadow-md border border-gray-200">
+            <table class="min-w-full table-auto">
+                <thead class="bg-gray-50 border-b border-gray-200">
+                    <tr>
+                        <th class="px-6 py-4 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Nome</th>
+                        <th class="px-6 py-4 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">E-mail</th>
+                        <th class="px-6 py-4 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Cargo</th>
+                        <th class="px-6 py-4 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Status</th>
+                        <th class="px-6 py-4 text-right text-xs font-semibold text-gray-500 uppercase tracking-wider">Ações</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr class="hover:bg-gray-50 transition duration-150">
+                        <td class="px-6 py-4 whitespace-nowrap">Ana Silva</td>
+                        <td class="px-6 py-4 whitespace-nowrap">ana.silva@email.com</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Professor</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Ativo</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                            <a href="#" class="text-blue-600 hover:text-blue-900 mr-3">Editar</a>
+                            <a href="#"class="text-red-600 hover:text-red-900">Excluir</a>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>Marcos Oliveira</td>
-                    <td>marcos.o@email.com</td>
-                    <td>Admin</td>
-                    <td>Pendente</td>
-                    <td>
-                        <a href="#">Editar</a>
-                        <a href="#">Excluir</a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+                    <tr class="hover:bg-gray-50 transition duration-150">
+                        <td class="px-6 py-4 whitespace-nowrap">Marcos Oliveira</td>
+                        <td class="px-6 py-4 whitespace-nowrap">marcos.o@email.com</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Usuário</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Pendente</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                            <a href="#" class="text-blue-600 hover:text-blue-900 mr-3" >Editar</a>
+                            <a href="#" class="text-red-600 hover:text-red-900">Excluir</a>
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition duration-150">
+                        <td class="px-6 py-4 whitespace-nowrap">José Guilherme</td>
+                        <td class="px-6 py-4 whitespace-nowrap">pato.tchola@email.com</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Aluno</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Pendente</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                            <a href="#" class="text-blue-600 hover:text-blue-900 mr-3">Editar</a>
+                            <a href="#" class="text-red-600 hover:text-red-900">Excluir</a>
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition duration-150">
+                        <td class="px-6 py-4 whitespace-nowrap">Miguel Marques</td>
+                        <td class="px-6 py-4 whitespace-nowrap">m1n1zin@email.com</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Aluno</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Pendente</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                            <a href="#" class="text-blue-600 hover:text-blue-900 mr-3">Editar</a>
+                            <a href="#" class="text-red-600 hover:text-red-900">Excluir</a>
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition duration-150">
+                        <td class="px-6 py-4 whitespace-nowrap">Thiago Araújo</td>
+                        <td class="px-6 py-4 whitespace-nowrap">bello7@email.com</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Aluno</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Pendente</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                            <a href="#" class="text-blue-600 hover:text-blue-900 mr-3">Editar</a>
+                            <a href="#" class="text-red-600 hover:text-red-900">Excluir</a>
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition duration-150">
+                        <td class="px-6 py-4 whitespace-nowrap">Reginaldo</td>
+                        <td class="px-6 py-4 whitespace-nowrap">registeel@email.com</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Aluno</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Pendente</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                            <a href="#" class="text-blue-600 hover:text-blue-900 mr-3">Editar</a>
+                            <a href="#" class="text-red-600 hover:text-red-900">Excluir</a>
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-gray-50 transition duration-150">
+                        <td class="px-6 py-4 whitespace-nowrap">Pietro Kawê</td>
+                        <td class="px-6 py-4 whitespace-nowrap">pkpkawe@email.com</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Aluno</td>
+                        <td class="px-6 py-4 whitespace-nowrap">Pendente</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                            <a href="#" class="text-blue-600 hover:text-blue-900 mr-3">Editar</a>
+                            <a href="#" class="text-red-600 hover:text-red-900">Excluir</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>    
+    </div>
 </body>
 </html>
