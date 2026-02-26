@@ -1,0 +1,25 @@
+{
+  "name": "first-template",
+  "version": "1.0.0",
+  "description": "## Description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind:watch": " npx @tailwindcss/cli -i base/static/global/css/input.css -o base/static/global/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroLopes30/first-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroLopes30/first-template/issues"
+  },
+  "homepage": "https://github.com/PedroLopes30/first-template#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwindcss": "^4.2.1"
+  }
+}
