@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind:watch": " npx @tailwindcss/cli -i base/static/global/css/input.css -o base/static/global/css/output.css --watch"
+    "tailwind:watch": " npx @tailwindcss/cli -i base/static/css/input.css -o base/static/css/output.css --watch"
   },
   "repository": {
     "type": "git",
